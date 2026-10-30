@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+  @custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+
+  --color-deviora-orange: #E06800;
+  --color-deviora-orange-hover: #C85B00;
+  --color-deviora-orange-light: #FFF5EB;
+  --color-deviora-orange-glow: rgba(224, 104, 0, 0.12);
+  --color-deviora-dark: #0A0A0C;
+  --color-deviora-surface: #111114;
+  --color-deviora-card: #16161A;
+  --color-deviora-border: #232328;
+  --font-impact: 'Bebas Neue', 'Antonio', sans-serif;
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+@layer base {
+  :root {
+    --bg-page: #FAF9F6;
+    --bg-surface: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --border-subtle: #E4E4E7;
+    --text-primary: #18181B;
+    --text-secondary: #52525B;
+    --text-muted: #71717A;
+  }
+
+  .dark {
+    --bg-page: #08080A;
+    --bg-surface: #101014;
+    --bg-card: #141418;
+    --border-subtle: #27272A;
+    --text-primary: #FAFAFA;
+    --text-secondary: #A1A1AA;
+    --text-muted: #71717A;
+  }
+
+  /* Zero shadow enforcement across all elements */
+  *, *::before, *::after {
+    box-shadow: none !important;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+.font-impact {
+  font-family: var(--font-impact);
+  letter-spacing: 0.04em;
+}
+
+.font-mono-tech {
+  font-family: var(--font-mono);
+  letter-spacing: 0.1em;
+}
+
+/* Custom clean scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(234, 114, 0, 0.35);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(234, 114, 0, 0.6);
+}

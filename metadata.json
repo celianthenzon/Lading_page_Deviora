@@ -1,0 +1,8 @@
+{
+  "name": "Deviora | Agence Digitale & Deviora Projets",
+  "description": "Deviora est une agence digitale jeune et ambitieuse : Développement Web & Mobile, Branding & Design, Marketing Digital. Accédez à Deviora Projets, plateforme collaborative.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

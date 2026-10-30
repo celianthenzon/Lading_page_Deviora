@@ -1,0 +1,1692 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deviora — Agence Digitale | BUILD. BRAND. GROW.</title>
+    <meta name="description" content="Deviora est une agence digitale jeune et innovante : Développement Web & Mobile, Branding & Design, Marketing Digital. La précision au cœur de l'innovation." />
+    <meta property="og:title" content="Deviora — Agence Digitale | BUILD. BRAND. GROW." />
+    <meta property="og:description" content="La précision au cœur de l'innovation. Développement Web & Mobile, Branding & Design, Marketing Digital." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308080A'/%3E%3Cpath d='M8 9h5c4.5 0 7 2.8 7 7s-2.5 7-7 7H8V9zm4 10.5h1c2.2 0 3.5-1.5 3.5-3.5S15.2 12.5 13 12.5h-1v7z' fill='%23E06800'/%3E%3Cpath d='M20 10l5 6-5 6' stroke='%23E06800' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      (function() {
+        try {
+          var t = localStorage.getItem('deviora_theme');
+          if (t === 'light') {
+            document.documentElement.classList.remove('dark');
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#FAF9F6] text-zinc-900 dark:bg-[#08080A] dark:text-white selection:bg-[#E06800] selection:text-black antialiased">
+
+    <!-- 1. STICKY NAVBAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 dark:bg-[#08080A]/95 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 py-3.5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          
+          <!-- Logo Deviora -->
+          <a href="#" class="inline-flex flex-col select-none group">
+            <div class="font-serif font-black tracking-tight flex items-baseline leading-none text-2xl">
+              <span class="text-[#EA7200]">De</span>
+              <span class="inline-flex items-center justify-center mx-[1px] translate-y-[-1px] text-[#EA7200]">
+                <svg class="w-4.5 h-4.5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 8l6 8 6-8" />
+                </svg>
+              </span>
+              <span class="text-zinc-900 dark:text-white font-extrabold tracking-tight">iora</span>
+            </div>
+            <span class="font-sans italic text-zinc-500 dark:text-zinc-400 font-medium text-[10px] tracking-wide mt-0.5">
+              La précision au cœur de l'innovation
+            </span>
+          </a>
+
+          <!-- Desktop Navigation Links -->
+          <nav class="hidden lg:flex items-center gap-7">
+            <a href="#a-propos" class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-[#EA7200] dark:hover:text-[#EA7200] transition-colors">
+              À propos
+            </a>
+            <a href="#services" class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-[#EA7200] dark:hover:text-[#EA7200] transition-colors">
+              Services (3 Pôles)
+            </a>
+            <a href="#plateforme" class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-[#EA7200] dark:hover:text-[#EA7200] transition-colors flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#EA7200]"></span>
+              Deviora Projets
+            </a>
+            <a href="#realisations" class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-[#EA7200] dark:hover:text-[#EA7200] transition-colors">
+              Réalisations
+            </a>
+            <a href="#equipe" class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-[#EA7200] dark:hover:text-[#EA7200] transition-colors">
+              L'Équipe
+            </a>
+            <a href="#contact" class="text-sm font-medium text-zinc-700 dark:text-zinc-300 hover:text-[#EA7200] dark:hover:text-[#EA7200] transition-colors">
+              Contact
+            </a>
+          </nav>
+
+          <!-- Right Controls: Theme Switch (Blanc / Noir style video) & CTA -->
+          <div class="hidden sm:flex items-center gap-3">
+            <!-- Theme Switcher Pill -->
+            <button type="button" id="theme-toggle-btn" class="px-3.5 py-1.5 text-xs font-semibold rounded-full border transition-all flex items-center gap-1.5 cursor-pointer bg-zinc-900/90 text-zinc-100 border-zinc-700/80 hover:border-[#E06800] hover:text-[#E06800] active:scale-95" title="Changer de thème (Blanc / Noir)">
+              <span class="theme-icon text-sm">☀️</span>
+              <span class="theme-text">Blanc</span>
+            </button>
+
+            <a href="#contact" class="px-4 py-2 text-xs font-bold rounded-full bg-[#E06800] text-black hover:bg-[#C85B00] transition-all flex items-center gap-1.5 active:scale-95">
+              <span>Demander un devis</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <div class="flex items-center gap-2 lg:hidden">
+            <button type="button" id="mobile-theme-toggle-btn" class="px-3 py-1 text-[11px] font-semibold rounded-full border transition-all flex items-center gap-1 cursor-pointer bg-zinc-900/90 text-zinc-100 border-zinc-700/80 hover:border-[#E06800]" title="Changer de thème">
+              <span class="theme-icon text-xs">☀️</span>
+              <span class="theme-text">Blanc</span>
+            </button>
+            <button type="button" id="mobile-menu-toggle" class="p-2 rounded-lg text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800" aria-label="Menu principal">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden bg-white/98 dark:bg-[#0C0C0E]/98 backdrop-blur-xl border-b border-zinc-200 dark:border-zinc-800 px-5 pt-4 pb-6 space-y-4">
+        <nav class="flex flex-col space-y-3 pt-2">
+          <a href="#a-propos" class="text-left py-2 text-base font-medium text-zinc-800 dark:text-zinc-200 border-b border-zinc-100 dark:border-zinc-800/60">À propos</a>
+          <a href="#services" class="text-left py-2 text-base font-medium text-zinc-800 dark:text-zinc-200 border-b border-zinc-100 dark:border-zinc-800/60">Nos Services (3 Pôles)</a>
+          <a href="#plateforme" class="text-left py-2 text-base font-medium text-[#EA7200] flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800/60">
+            <span>Deviora Projets (Gestion)</span>
+            <span class="text-[10px] bg-[#EA7200]/15 text-[#EA7200] px-2 py-0.5 rounded-full font-mono uppercase">Plateforme</span>
+          </a>
+          <a href="#realisations" class="text-left py-2 text-base font-medium text-zinc-800 dark:text-zinc-200 border-b border-zinc-100 dark:border-zinc-800/60">Nos Réalisations</a>
+          <a href="#equipe" class="text-left py-2 text-base font-medium text-zinc-800 dark:text-zinc-200 border-b border-zinc-100 dark:border-zinc-800/60">L'Équipe</a>
+          <a href="#contact" class="text-left py-2 text-base font-medium text-zinc-800 dark:text-zinc-200">Contact & Devis</a>
+        </nav>
+        <div class="pt-2 flex flex-col gap-2.5">
+          <a href="#contact" class="w-full py-3 text-center text-sm font-bold rounded-full bg-[#EA7200] text-black flex items-center justify-center gap-2">
+            <span>Demander un devis express</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+          <a href="tel:+237651026545" class="w-full py-2.5 text-center text-xs font-semibold rounded-full border border-zinc-300 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 flex items-center justify-center gap-2">
+            <span>(+237) 651-026-545</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. HERO SECTION (CATALOG PAGE 1 + VIDEO DESIGN) -->
+    <section class="relative pt-28 pb-0 flex flex-col justify-between overflow-hidden bg-white dark:bg-[#08080A] transition-colors duration-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10 flex-1">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Column: Typography & Numbers -->
+          <div class="lg:col-span-7 space-y-6 text-left">
+            
+            <div class="flex items-center gap-3">
+              <span class="font-mono text-xs sm:text-sm tracking-widest uppercase font-bold text-[#EA7200]">
+                LA PRÉCISION AU CŒUR DE L'INNOVATION
+              </span>
+              <div class="h-[1px] w-12 bg-[#EA7200]/50"></div>
+            </div>
+
+            <!-- Bold Condensed Title -->
+            <div class="font-impact text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tight uppercase select-none">
+              <div class="text-zinc-900 dark:text-white">BUILD.</div>
+              <div class="text-[#EA7200]">BRAND.</div>
+              <div class="text-zinc-900 dark:text-white">GROW.</div>
+            </div>
+
+            <!-- Description verbatim from Catalog -->
+            <p class="text-base sm:text-lg text-zinc-700 dark:text-zinc-300 leading-relaxed font-normal max-w-xl">
+              Une agence digitale jeune et ambitieuse, spécialisée dans trois domaines d'excellence pour propulser votre entreprise vers le succès.
+            </p>
+
+            <!-- Action CTAs -->
+            <div class="pt-1 flex flex-wrap items-center gap-4">
+              <a href="#contact" class="px-6 py-3.5 rounded-full bg-[#EA7200] text-black font-extrabold text-sm sm:text-base hover:bg-[#D46400] transition-all flex items-center gap-2 active:scale-95">
+                <span>Demander une estimation</span>
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+
+              <a href="#services" class="px-6 py-3.5 rounded-full border border-zinc-300 dark:border-zinc-700 hover:border-[#EA7200] dark:hover:border-[#EA7200] text-zinc-800 dark:text-zinc-200 hover:text-[#EA7200] dark:hover:text-[#EA7200] font-semibold text-sm sm:text-base transition-all flex items-center gap-2">
+                <span>Découvrir le catalogue</span>
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+              </a>
+            </div>
+
+            <!-- 3 Numbered points with line from Catalog Page 1 -->
+            <div class="pt-6 space-y-3.5 border-t border-zinc-200 dark:border-zinc-800">
+              <div class="flex items-center gap-3 text-sm">
+                <span class="font-mono font-bold text-sm text-[#EA7200] w-6">01</span>
+                <span class="text-[#EA7200] font-bold text-xs">——</span>
+                <span class="font-extrabold text-zinc-900 dark:text-white tracking-wide uppercase">WEB DEVELOPMENT</span>
+                <span class="text-zinc-500 dark:text-zinc-400 text-xs">Sites, Apps & API</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <span class="font-mono font-bold text-sm text-[#EA7200] w-6">02</span>
+                <span class="text-[#EA7200] font-bold text-xs">——</span>
+                <span class="font-extrabold text-zinc-900 dark:text-white tracking-wide uppercase">BRANDING & DESIGN</span>
+                <span class="text-zinc-500 dark:text-zinc-400 text-xs">Identité visuelle complète</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <span class="font-mono font-bold text-sm text-[#EA7200] w-6">03</span>
+                <span class="text-[#EA7200] font-bold text-xs">——</span>
+                <span class="font-extrabold text-zinc-900 dark:text-white tracking-wide uppercase">MARKETING DIGITAL</span>
+                <span class="text-zinc-500 dark:text-zinc-400 text-xs">Croissance & visibilité</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Visual and 4 Service Feature Cards from Catalog Page 1 -->
+          <div class="lg:col-span-5 relative flex flex-col items-center">
+            
+            <div class="w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden bg-zinc-950 border border-zinc-200 dark:border-zinc-800 relative">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=80"
+                alt="Deviora Professionnelle"
+                class="w-full h-full object-cover object-center filter contrast-[1.02] brightness-95"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+              
+              <!-- Fine vertical orange bar on left -->
+              <div class="absolute top-8 left-6 bottom-8 w-1 bg-[#EA7200]"></div>
+
+              <div class="absolute top-6 right-6 font-mono text-[10px] text-zinc-300 bg-black/70 backdrop-blur-md px-3 py-1 rounded-md border border-white/10 uppercase tracking-wider">
+                Deviora Digital Studio
+              </div>
+
+              <!-- Deviora Projets Live Indicator -->
+              <div class="absolute bottom-6 left-10 right-6 bg-zinc-950/95 backdrop-blur-md border border-zinc-800 rounded-2xl p-4">
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-2">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#EA7200] opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-[#EA7200]"></span>
+                    </span>
+                    <span class="text-xs font-bold text-white tracking-wide">Deviora Projets</span>
+                  </div>
+                  <span class="font-mono text-[10px] text-[#EA7200] font-bold">Cockpit Client Actif</span>
+                </div>
+                <p class="text-[11px] text-zinc-300 leading-snug">
+                  Pilotage en direct de vos projets : sprints, livrables, calendrier et suivi en temps réel.
+                </p>
+              </div>
+            </div>
+
+            <!-- The 4 Feature Cards from Catalog Page 1 -->
+            <div class="w-full max-w-md grid grid-cols-2 gap-3 mt-4">
+              <div class="p-3 rounded-xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex items-center gap-3">
+                <div class="p-2 rounded-lg bg-orange-50 dark:bg-zinc-800 text-[#EA7200] border border-orange-100 dark:border-zinc-700/60">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                </div>
+                <div>
+                  <div class="text-[11px] font-bold text-zinc-900 dark:text-white uppercase tracking-wider">WEB DEV</div>
+                  <div class="text-[10px] text-zinc-500 dark:text-zinc-400">Sites · Apps · API</div>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex items-center gap-3">
+                <div class="p-2 rounded-lg bg-orange-50 dark:bg-zinc-800 text-[#EA7200] border border-orange-100 dark:border-zinc-700/60">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><line x1="12" x2="12.01" y1="18" y2="18"/></svg>
+                </div>
+                <div>
+                  <div class="text-[11px] font-bold text-zinc-900 dark:text-white uppercase tracking-wider">E-COMMERCE</div>
+                  <div class="text-[10px] text-zinc-500 dark:text-zinc-400">Mobile · Boutique</div>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex items-center gap-3">
+                <div class="p-2 rounded-lg bg-orange-50 dark:bg-zinc-800 text-[#EA7200] border border-orange-100 dark:border-zinc-700/60">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                </div>
+                <div>
+                  <div class="text-[11px] font-bold text-zinc-900 dark:text-white uppercase tracking-wider">BRANDING</div>
+                  <div class="text-[10px] text-zinc-500 dark:text-zinc-400">Logo · Charte · Design</div>
+                </div>
+              </div>
+
+              <div class="p-3 rounded-xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex items-center gap-3">
+                <div class="p-2 rounded-lg bg-orange-50 dark:bg-zinc-800 text-[#EA7200] border border-orange-100 dark:border-zinc-700/60">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                </div>
+                <div>
+                  <div class="text-[11px] font-bold text-zinc-900 dark:text-white uppercase tracking-wider">MARKETING</div>
+                  <div class="text-[10px] text-zinc-500 dark:text-zinc-400">Ads · Social · Stratégie</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Orange Contact Strip from bottom of Page 1 PDF -->
+      <div class="w-full mt-12 bg-[#EA7200] text-black py-3 px-4">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-6 sm:gap-12 font-bold text-xs sm:text-sm tracking-wide">
+          <a href="tel:+237651026545" class="flex items-center gap-2 hover:opacity-85 transition-opacity">
+            <svg class="w-4 h-4 fill-black stroke-black" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>651-026-545</span>
+          </a>
+          <span class="hidden sm:inline opacity-50">|</span>
+          <a href="tel:+237688373844" class="flex items-center gap-2 hover:opacity-85 transition-opacity">
+            <svg class="w-4 h-4 fill-black stroke-black" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>688-373-844</span>
+          </a>
+          <span class="hidden sm:inline opacity-50">|</span>
+          <span class="font-mono text-xs sm:text-sm">@deviora25</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SECTION À PROPOS -->
+    <section id="a-propos" class="py-24 relative overflow-hidden bg-zinc-50/70 dark:bg-[#0B0B0E]/60 border-y border-zinc-200 dark:border-zinc-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="max-w-3xl space-y-3 mb-16">
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-xs tracking-widest uppercase font-semibold text-[#EA7200]">QU'EST-CE QUE DEVIORA</span>
+            <div class="h-[1px] w-16 bg-[#EA7200]/40"></div>
+          </div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-white leading-tight">
+            L'excellence digitale façonnée par la <span class="text-[#EA7200]">précision</span>.
+          </h2>
+          <p class="text-base sm:text-lg text-zinc-700 dark:text-zinc-300 leading-relaxed pt-2">
+            Deviora est une agence digitale jeune et ambitieuse. Notre mission est de transformer le potentiel des entreprises en résultats concrets grâce à une synergie unique entre technologie moderne, création visuelle percutante et acquisition stratégique.
+          </p>
+        </div>
+
+        <!-- 3 Numbered Pillars Cards with Big Numbers & Underline -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          
+          <!-- Pillar 01 -->
+          <div class="relative p-8 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200]/50 transition-all group">
+            <div class="flex items-baseline justify-between mb-6">
+              <span class="font-impact text-6xl text-[#EA7200] leading-none select-none">01</span>
+              <div class="p-3 rounded-xl bg-orange-50 dark:bg-zinc-800 text-[#EA7200] border border-orange-100 dark:border-zinc-700">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg>
+              </div>
+            </div>
+            <div class="w-12 h-0.5 bg-[#EA7200] mb-6 group-hover:w-20 transition-all duration-300"></div>
+            <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Web Development</h3>
+            <p class="font-mono text-xs font-semibold text-[#EA7200] tracking-wide mb-3">Sites, Apps & API</p>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+              Du site vitrine élégant aux applications mobiles natives et architectures d'API critiques : du code propre, performant, pensé pour durer.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-600 dark:text-zinc-300">
+              <li class="flex items-center gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Sites vitrines & plateformes E-Commerce</span></li>
+              <li class="flex items-center gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Applications Android & iOS</span></li>
+              <li class="flex items-center gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Architectures Backend & API REST</span></li>
+            </ul>
+          </div>
+
+          <!-- Pillar 02 -->
+          <div class="relative p-8 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200]/50 transition-all group">
+            <div class="flex items-baseline justify-between mb-6">
+              <span class="font-impact text-6xl text-[#EA7200] leading-none select-none">02</span>
+              <div class="p-3 rounded-xl bg-orange-50 dark:bg-zinc-800 text-[#EA7200] border border-orange-100 dark:border-zinc-700">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </div>
+            </div>
+            <div class="w-12 h-0.5 bg-[#EA7200] mb-6 group-hover:w-20 transition-all duration-300"></div>
+            <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Branding & Design</h3>
+            <p class="font-mono text-xs font-semibold text-[#EA7200] tracking-wide mb-3">Identité visuelle complète</p>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+              Une image de marque forte qui inspire une confiance immédiate. Nous créons des identités mémorables, chartes graphiques, packagings et design UI/UX.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-600 dark:text-zinc-300">
+              <li class="flex items-center gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Logos vectoriels & chartes graphiques</span></li>
+              <li class="flex items-center gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Packaging 3D & supports imprimés</span></li>
+              <li class="flex items-center gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Design d'interfaces (UI/UX) ergonomiques</span></li>
+            </ul>
+          </div>
+
+          <!-- Pillar 03 -->
+          <div class="relative p-8 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200]/50 transition-all group">
+            <div class="flex items-baseline justify-between mb-6">
+              <span class="font-impact text-6xl text-[#EA7200] leading-none select-none">03</span>
+              <div class="p-3 rounded-xl bg-orange-50 dark:bg-zinc-800 text-[#EA7200] border border-orange-100 dark:border-zinc-700">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+              </div>
+            </div>
+            <div class="w-12 h-0.5 bg-[#EA7200] mb-6 group-hover:w-20 transition-all duration-300"></div>
+            <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Marketing Digital</h3>
+            <p class="font-mono text-xs font-semibold text-[#EA7200] tracking-wide mb-3">Croissance & visibilité</p>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+              La visibilité sans conversion ne sert à rien. Nous déployons des campagnes d'acquisition payantes, du community management et des tunnels de vente axés ROI.
+            </p>
+            <ul class="space-y-2 text-xs text-zinc-600 dark:text-zinc-300">
+              <li class="flex items-center gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Publicité en ligne (Meta Ads & Google Ads)</span></li>
+              <li class="flex items-center gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Gestion quotidienne des réseaux sociaux</span></li>
+              <li class="flex items-center gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Stratégie de contenu & suivi des conversions</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Callout Banner: Deviora Projets -->
+        <div class="rounded-3xl p-8 sm:p-10 bg-zinc-900 dark:bg-[#101014] border border-zinc-800 text-white relative overflow-hidden">
+          <div class="absolute top-0 right-10 w-24 h-0.5 bg-[#EA7200]"></div>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-8 space-y-4">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#EA7200]"></span>
+                <span class="font-mono text-xs font-semibold text-[#EA7200] tracking-widest uppercase">INNOVATION DEVIORA</span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+                Deviora Projets : <span class="text-[#EA7200]">Votre cockpit de pilotage</span> en temps réel.
+              </h3>
+              <p class="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-2xl">
+                Finis les échanges d'emails interminables et les devis perdus. Tous les projets menés par Deviora sont pilotés via notre plateforme collaborative dédiée : suivez vos jalons en direct, échangez avec vos experts, consultez vos appels d'offres et validez les livrables en un clic.
+              </p>
+            </div>
+            <div class="lg:col-span-4 flex justify-center lg:justify-end">
+              <a href="#plateforme" class="w-full sm:w-auto py-3.5 px-6 rounded-full bg-[#EA7200] text-black font-extrabold text-sm hover:bg-[#D46400] transition-all flex items-center justify-center gap-2">
+                <span>Voir l'aperçu de l'outil</span>
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. SECTION NOS SERVICES (CATALOGUE 3 PÔLES) -->
+    <section id="services" class="py-24 relative overflow-hidden bg-white dark:bg-[#08080A] transition-colors duration-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div class="space-y-3 max-w-2xl">
+            <div class="flex items-center gap-3">
+              <span class="font-mono text-xs tracking-widest uppercase font-semibold text-[#EA7200]">CATALOGUE OFFICIEL & TARIFS 2026</span>
+              <div class="h-[1px] w-16 bg-[#EA7200]/40"></div>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-white">
+              Nos <span className="text-[#EA7200]" style="color: #EA7200;">Services</span> par Pôles d'Excellence
+            </h2>
+            <p class="text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+              Des expertises pointues et transversales avec une grille tarifaire claire et transparente issue du catalogue officiel Deviora.
+            </p>
+          </div>
+
+          <div class="flex items-center gap-2 p-3 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 shrink-0 self-start md:self-auto">
+            <svg class="w-4 h-4 text-[#EA7200] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="16" y2="12"/><line x1="12" x2="12.01" y1="8" y2="8"/></svg>
+            <span>Tarifs en FCFA : fourchette indicative / sur devis</span>
+          </div>
+        </div>
+
+        <!-- Pole Selector Tabs -->
+        <div class="flex flex-wrap gap-2.5 mb-10 p-1.5 rounded-2xl bg-zinc-100 dark:bg-zinc-900/80 border border-zinc-200 dark:border-zinc-800">
+          <button type="button" data-pole-tab="01" class="flex-1 min-w-[200px] py-3.5 px-5 rounded-xl font-medium text-xs sm:text-sm transition-all text-left flex items-center justify-between gap-3 bg-white dark:bg-[#18181C] text-zinc-900 dark:text-white border-b-2 border-b-[#EA7200]">
+            <div class="flex items-center gap-3">
+              <span class="font-mono font-bold text-xs text-[#EA7200]">PÔLE 01</span>
+              <span class="font-semibold truncate">Développement Web & Mobile</span>
+            </div>
+            <span class="w-2 h-2 rounded-full bg-[#EA7200] shrink-0"></span>
+          </button>
+
+          <button type="button" data-pole-tab="02" class="flex-1 min-w-[200px] py-3.5 px-5 rounded-xl font-medium text-xs sm:text-sm transition-all text-left flex items-center justify-between gap-3 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">
+            <div class="flex items-center gap-3">
+              <span class="font-mono font-bold text-xs text-zinc-400">PÔLE 02</span>
+              <span class="font-semibold truncate">Branding & Design</span>
+            </div>
+          </button>
+
+          <button type="button" data-pole-tab="03" class="flex-1 min-w-[200px] py-3.5 px-5 rounded-xl font-medium text-xs sm:text-sm transition-all text-left flex items-center justify-between gap-3 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">
+            <div class="flex items-center gap-3">
+              <span class="font-mono font-bold text-xs text-zinc-400">PÔLE 03</span>
+              <span class="font-semibold truncate">Marketing Digital</span>
+            </div>
+          </button>
+        </div>
+
+        <!-- PANEL PÔLE 01 : WEB & MOBILE (Page 2 PDF) -->
+        <div data-pole-panel="01" class="space-y-10">
+          <div class="p-6 sm:p-8 rounded-2xl bg-zinc-900 dark:bg-[#101014] text-white border border-zinc-800 relative overflow-hidden">
+            <div class="absolute top-0 left-0 right-0 h-1 bg-[#EA7200]"></div>
+            <span class="font-mono text-[11px] font-semibold text-[#EA7200] tracking-widest uppercase block mb-1">PÔLE 01 / 03 — SITES, APPS & API</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-2">DÉVELOPPEMENT WEB & MOBILE</h3>
+            <p class="text-zinc-300 text-sm sm:text-base italic leading-relaxed">
+              « Construisez des expériences digitales qui convertissent et fidélisent. »
+            </p>
+          </div>
+
+          <!-- Section 1: SITES WEB -->
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#EA7200] bg-[#EA7200]/10 px-3 py-1 rounded">SITES WEB</span>
+              <div class="h-[1px] flex-1 bg-zinc-200 dark:bg-zinc-800"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Site Vitrine -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Site Vitrine</h4>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Image professionnelle en ligne</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Présentez votre entreprise avec un site moderne, rapide et optimisé pour tous les écrans.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Design UX/UI moderne et responsive</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>SEO de base intégré</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>HTTPS et mise en ligne inclus</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ 80 000 – 150 000 FCFA ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Par projet</span>
+                  </div>
+                  <button type="button" data-service-select="Site Vitrine" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+
+              <!-- Site E-Commerce -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-[#EA7200]/60 ring-1 ring-[#EA7200]/30 flex flex-col justify-between">
+                <div>
+                  <div class="flex justify-between items-start mb-2">
+                    <h4 class="text-xl font-bold text-zinc-900 dark:text-white">Site E-Commerce</h4>
+                    <span class="font-mono text-[10px] uppercase font-bold text-black bg-[#EA7200] px-2 py-0.5 rounded">Populaire</span>
+                  </div>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Vente en ligne optimisée</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Vendez vos produits 24h/24 avec paiement sécurisé et gestion des stocks.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Catalogue produits et panier</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Paiement en ligne sécurisé (Mobile Money & Carte)</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Gestion stocks et commandes</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ 150 000 – 400 000 FCFA ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Par projet</span>
+                  </div>
+                  <button type="button" data-service-select="Site E-Commerce" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+
+              <!-- API & Backend -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">API & Backend</h4>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Architecture technique robuste</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Architecture sécurisée et base de données pour alimenter vos applications.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>API REST et base de données</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Sécurité et authentification</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Documentation technique Swagger / Postman</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ 100 000 – 300 000 FCFA ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Par projet</span>
+                  </div>
+                  <button type="button" data-service-select="API & Backend" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+
+              <!-- Maintenance & Support -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Maintenance & Support</h4>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Mensuel — Stabilité garantie</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Garantissez la disponibilité continue de vos plateformes sans stress technique.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Mises à jour et sauvegardes</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Surveillance continue 24/7</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Corrections et support client dédié</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ 20 000 – 80 000 FCFA / mois ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Mensuel</span>
+                  </div>
+                  <button type="button" data-service-select="Maintenance & Support" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: APPLICATIONS MOBILES -->
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#EA7200] bg-[#EA7200]/10 px-3 py-1 rounded">APPLICATIONS MOBILES</span>
+              <div class="h-[1px] flex-1 bg-zinc-200 dark:bg-zinc-800"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- App Android / iOS -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-[#EA7200]/60 ring-1 ring-[#EA7200]/30 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">App Android / iOS</h4>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Native ou hybride</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Application sur mesure pour smartphones avec connexion backend et intégration de services.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Analyse, dev, tests et livraison APK/IPA</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Connexion backend et API</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Notifications push & haute fluidité</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ 250 000 – 1 000 000 FCFA ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Par projet</span>
+                  </div>
+                  <button type="button" data-service-select="App Android / iOS" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+
+              <!-- UI/UX Design Mobile -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">UI/UX Design Mobile</h4>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Interfaces intuitives</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Wireframes et maquettes interactives testées pour garantir l'adoption de votre app.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Wireframes, prototypes et design final</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Tests d'ergonomie inclus</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Exportation des assets développeurs</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ 50 000 – 100 000 FCFA ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Par projet</span>
+                  </div>
+                  <button type="button" data-service-select="UI/UX Design Mobile" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Note verbatim du catalogue -->
+          <div class="p-5 rounded-2xl bg-zinc-50 dark:bg-[#121214] border-l-4 border-l-[#EA7200] border border-zinc-200 dark:border-zinc-800 text-xs text-zinc-700 dark:text-zinc-300 space-y-1">
+            <span class="font-mono font-bold uppercase text-[#EA7200] block mb-1">NOTE TECHNIQUE CATALOGUE :</span>
+            <p>* Les tarifs varient selon la complexité du projet, les fonctionnalités demandées et les délais.</p>
+            <p>* Publication sur stores disponible en option (20 000 – 50 000 FCFA).</p>
+          </div>
+        </div>
+
+        <!-- PANEL PÔLE 02 : BRANDING & DESIGN (Page 3 PDF) -->
+        <div data-pole-panel="02" class="hidden space-y-10">
+          <div class="p-6 sm:p-8 rounded-2xl bg-zinc-900 dark:bg-[#101014] text-white border border-zinc-800 relative overflow-hidden">
+            <div class="absolute top-0 left-0 right-0 h-1 bg-[#EA7200]"></div>
+            <span class="font-mono text-[11px] font-semibold text-[#EA7200] tracking-widest uppercase block mb-1">PÔLE 02 / 03 — IDENTITÉ VISUELLE COMPLÈTE</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-2">BRANDING & DESIGN</h3>
+            <p class="text-zinc-300 text-sm sm:text-base italic leading-relaxed">
+              « Une identité visuelle qui marque les esprits et inspire confiance. »
+            </p>
+          </div>
+
+          <!-- Section 1: IDENTITÉ VISUELLE & STRATÉGIE DE MARQUE -->
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#EA7200] bg-[#EA7200]/10 px-3 py-1 rounded">IDENTITÉ VISUELLE & STRATÉGIE DE MARQUE</span>
+              <div class="h-[1px] flex-1 bg-zinc-200 dark:bg-zinc-800"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Identité Visuelle -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Identité Visuelle</h4>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Fondation de votre marque</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Posez les fondations visuelles durables de votre entreprise pour vous démarquer.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Création de logo professionnel</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Charte graphique complète</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Positionnement & ton de marque, naming</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ Sur devis personnalisé ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Sur mesure</span>
+                  </div>
+                  <button type="button" data-service-select="Identité Visuelle" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+
+              <!-- Design Graphique -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Design Graphique</h4>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Supports visuels impactants</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Création de tous vos visuels imprimés et numériques pour une communication forte.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Flyers, affiches, brochures, cartes</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Bannières web et publicitaires</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Templates réseaux sociaux & pitch decks</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ Sur devis personnalisé ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Sur mesure</span>
+                  </div>
+                  <button type="button" data-service-select="Design Graphique" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: BRANDING DIGITAL & PACKAGING -->
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#EA7200] bg-[#EA7200]/10 px-3 py-1 rounded">BRANDING DIGITAL & PACKAGING</span>
+              <div class="h-[1px] flex-1 bg-zinc-200 dark:bg-zinc-800"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Branding Digital -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Branding Digital</h4>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Présence online cohérente</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Rebranding complet et harmonisation visuelle de tous vos canaux.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Rebranding complet d'entreprise</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Habillage visuel des réseaux sociaux</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Visuels pour campagnes Meta / Google</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ Sur devis personnalisé ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Sur mesure</span>
+                  </div>
+                  <button type="button" data-service-select="Branding Digital" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+
+              <!-- Packaging & Produits -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Packaging & Produits</h4>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Expérience produit mémorable</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Mise en valeur de vos produits physiques avec modélisation 3D et étiquettes pro.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Conception d'emballages produits</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Étiquettes & mockups photo-réalistes</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Maquettes 3D pour présentation de marque</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ Sur devis personnalisé ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Sur mesure</span>
+                  </div>
+                  <button type="button" data-service-select="Packaging & Produits" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Banner verbatim du catalogue Page 3 -->
+          <div class="p-6 sm:p-8 rounded-2xl bg-zinc-900 dark:bg-[#101014] border border-zinc-800 text-zinc-200 relative overflow-hidden">
+            <div class="absolute top-0 bottom-0 left-0 w-1.5 bg-[#EA7200]"></div>
+            <div class="max-w-3xl space-y-1">
+              <span class="font-mono text-xs uppercase font-bold text-[#EA7200] block">CRÉEZ UNE IDENTITÉ VISUELLE QUI MARQUE LES ESPRITS.</span>
+              <p class="text-sm sm:text-base text-zinc-100 font-medium leading-relaxed">
+                « Nous accompagnons startups, PME et marques digitales vers une image forte, cohérente et attractive - de la conception à la mise en œuvre. »
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL PÔLE 03 : MARKETING DIGITAL (Page 4 PDF) -->
+        <div data-pole-panel="03" class="hidden space-y-10">
+          <div class="p-6 sm:p-8 rounded-2xl bg-zinc-900 dark:bg-[#101014] text-white border border-zinc-800 relative overflow-hidden">
+            <div class="absolute top-0 left-0 right-0 h-1 bg-[#EA7200]"></div>
+            <span class="font-mono text-[11px] font-semibold text-[#EA7200] tracking-widest uppercase block mb-1">PÔLE 03 / 03 — CROISSANCE & VISIBILITÉ</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-2">MARKETING DIGITAL</h3>
+            <p class="text-zinc-300 text-sm sm:text-base italic leading-relaxed">
+              « Stratégie, contenu et publicité pour maximiser votre visibilité & ROI. »
+            </p>
+          </div>
+
+          <!-- Section 1: PUBLICITÉ & GESTION DES RÉSEAUX SOCIAUX -->
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#EA7200] bg-[#EA7200]/10 px-3 py-1 rounded">PUBLICITÉ & GESTION DES RÉSEAUX SOCIAUX</span>
+              <div class="h-[1px] flex-1 bg-zinc-200 dark:bg-zinc-800"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Publicité en Ligne (Ads) -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-[#EA7200]/60 ring-1 ring-[#EA7200]/30 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Publicité en Ligne (Ads)</h4>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Campagnes à fort impact</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Acquisition payante optimisée pour générer des prospects et des ventes qualifiées.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Campagnes Meta Ads (Facebook & Instagram)</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Campagnes Google Ads (Search, Display, YouTube)</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Stratégie publicitaire & suivi du ROI</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ Sur devis personnalisé ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Sur mesure</span>
+                  </div>
+                  <button type="button" data-service-select="Publicité en Ligne (Ads)" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+
+              <!-- Social Media Management -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Social Media Management</h4>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Communauté & engagement</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Gestion quotidienne de votre image pour fédérer une communauté active et fidèle.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Gestion quotidienne des réseaux</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Création de visuels et vidéos adaptés</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Calendrier éditorial & reporting mensuel</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ Sur devis personnalisé ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Sur mesure</span>
+                  </div>
+                  <button type="button" data-service-select="Social Media Management" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: STRATÉGIE & CONTENT MARKETING -->
+          <div>
+            <div class="flex items-center gap-3 mb-6">
+              <span class="font-mono text-xs font-bold uppercase tracking-wider text-[#EA7200] bg-[#EA7200]/10 px-3 py-1 rounded">STRATÉGIE & CONTENT MARKETING</span>
+              <div class="h-[1px] flex-1 bg-zinc-200 dark:bg-zinc-800"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Stratégie Digitale -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Stratégie Digitale</h4>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Feuille de route sur mesure</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Plan d'action clair pour conquérir des parts de marché et structurer votre présence.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Élaboration de stratégie digitale complète</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Positionnement & image de marque en ligne</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Analyse concurrentielle & définition des KPI</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ Sur devis personnalisé ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Sur mesure</span>
+                  </div>
+                  <button type="button" data-service-select="Stratégie Digitale" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+
+              <!-- Content Marketing -->
+              <div class="p-6 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Content Marketing</h4>
+                  <p class="text-xs italic text-zinc-500 dark:text-zinc-400 mb-3">Contenu qui convertit</p>
+                  <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-4">Création de contenus pertinents qui informent, rassurent et incitent à l'action.</p>
+                  <ul class="space-y-2 mb-6 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300">
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Création de contenus engageants (texte, visuel)</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Calendrier éditorial optimisé</span></li>
+                    <li class="flex items-start gap-2"><span class="text-[#EA7200] font-bold">—</span><span>Suivi performances (KPI, ROI, reach)</span></li>
+                  </ul>
+                </div>
+                <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-3">
+                  <div class="p-3 rounded-xl bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
+                    <span class="font-mono text-xs sm:text-sm font-bold text-[#EA7200]">[ Sur devis personnalisé ]</span>
+                    <span class="text-[10px] text-zinc-500 uppercase font-mono">Sur mesure</span>
+                  </div>
+                  <button type="button" data-service-select="Content Marketing" class="w-full py-2.5 px-4 text-xs font-bold rounded-lg text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-black hover:bg-[#EA7200] dark:hover:bg-[#EA7200] border border-zinc-200 dark:border-zinc-800 hover:border-[#EA7200] transition-all">
+                    Demander ce service
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3-Column Banner verbatim Page 4 PDF -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="p-6 rounded-2xl bg-zinc-900 dark:bg-[#101014] text-white border border-zinc-800 flex items-start gap-4">
+              <div class="font-impact text-4xl text-[#EA7200] leading-none shrink-0">+ROI</div>
+              <div>
+                <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-zinc-300 mb-1">ROI</h4>
+                <p class="text-xs text-zinc-400 leading-snug">Retour sur investissement mesuré et optimisé en continu.</p>
+              </div>
+            </div>
+            <div class="p-6 rounded-2xl bg-zinc-900 dark:bg-[#101014] text-white border border-zinc-800 flex items-start gap-4">
+              <div class="font-impact text-4xl text-[#EA7200] leading-none shrink-0">360°</div>
+              <div>
+                <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-zinc-300 mb-1">APPROCHE DIGITALE</h4>
+                <p class="text-xs text-zinc-400 leading-snug">Vision globale intégrant visuel, technique et conversion.</p>
+              </div>
+            </div>
+            <div class="p-6 rounded-2xl bg-zinc-900 dark:bg-[#101014] text-white border border-zinc-800 flex items-start gap-4">
+              <div class="font-impact text-4xl text-[#EA7200] leading-none shrink-0">DATA</div>
+              <div>
+                <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-zinc-300 mb-1">DÉCISIONS</h4>
+                <p class="text-xs text-zinc-400 leading-snug">Pilotage basé sur les données et le comportement utilisateur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. SECTION APERÇU DE LA PLATEFORME DEVIORA PROJETS -->
+    <section id="plateforme" class="py-24 relative overflow-hidden bg-zinc-950 text-white border-y border-zinc-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
+          <div class="space-y-3 max-w-2xl">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-[#EA7200]"></span>
+              <span class="font-mono text-xs font-semibold text-[#EA7200] tracking-widest uppercase">OUTIL DE GESTION EXCLUSIF</span>
+              <div class="h-[1px] w-12 bg-[#EA7200]/40"></div>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+              Aperçu de la plateforme <span class="text-[#EA7200]">Deviora Projets</span>
+            </h2>
+            <p class="text-sm sm:text-base text-zinc-400">
+              Votre espace client unique pour piloter le développement, valider les maquettes, suivre les sprints en temps réel et communiquer sans intermédiaire avec nos pôles experts.
+            </p>
+          </div>
+
+          <!-- Switcher Desktop / Mobile -->
+          <div class="flex items-center p-1 rounded-xl bg-zinc-900 border border-zinc-800">
+            <button type="button" id="device-desktop" class="px-3 py-1.5 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition-all bg-[#EA7200] text-black font-bold">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+              <span>Desktop</span>
+            </button>
+            <button type="button" id="device-mobile" class="px-3 py-1.5 text-xs font-semibold rounded-lg flex items-center gap-1.5 transition-all text-zinc-400 hover:text-white">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><line x1="12" x2="12.01" y1="18" y2="18"/></svg>
+              <span>Mobile</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Platform Tabs -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-8">
+          <button type="button" data-platform-tab="dashboard" class="p-3.5 rounded-xl font-medium text-xs sm:text-sm flex items-center gap-2.5 transition-all border bg-zinc-900 border-[#EA7200] text-white">
+            <svg class="w-4 h-4 text-[#EA7200]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+            <span class="truncate">1. Tableau de bord</span>
+          </button>
+          <button type="button" data-platform-tab="kanban" class="p-3.5 rounded-xl font-medium text-xs sm:text-sm flex items-center gap-2.5 transition-all border bg-zinc-900/40 border-zinc-800 text-zinc-400 hover:text-white">
+            <svg class="w-4 h-4 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 4h4v16H4zm6 0h4v10h-4zm6 0h4v6h-4z"/></svg>
+            <span class="truncate">2. Projets & Kanban</span>
+          </button>
+          <button type="button" data-platform-tab="calendar" class="p-3.5 rounded-xl font-medium text-xs sm:text-sm flex items-center gap-2.5 transition-all border bg-zinc-900/40 border-zinc-800 text-zinc-400 hover:text-white">
+            <svg class="w-4 h-4 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+            <span class="truncate">3. Calendrier & Jalons</span>
+          </button>
+          <button type="button" data-platform-tab="messages" class="p-3.5 rounded-xl font-medium text-xs sm:text-sm flex items-center gap-2.5 transition-all border bg-zinc-900/40 border-zinc-800 text-zinc-400 hover:text-white">
+            <svg class="w-4 h-4 text-zinc-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+            <span class="truncate">4. Messagerie & Devis</span>
+          </button>
+        </div>
+
+        <!-- Frame: Desktop -->
+        <div id="frame-desktop" class="rounded-2xl border border-zinc-800 bg-[#0E0E12] overflow-hidden">
+          <div class="bg-[#16161B] px-4 py-3 border-b border-zinc-800 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+              <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+              <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+            </div>
+            <div class="bg-zinc-900 px-6 py-1 rounded-full border border-zinc-800 text-[11px] font-mono text-zinc-400 flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span>app.deviora.com/projets/cockpit</span>
+            </div>
+            <span class="text-[10px] font-mono text-[#EA7200] font-bold">SESSION ACTIVE</span>
+          </div>
+
+          <div class="p-6 sm:p-8 min-h-[460px]">
+            <!-- Screen 1: Dashboard -->
+            <div data-platform-screen="dashboard" class="space-y-6">
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 rounded-xl bg-zinc-900/90 border border-zinc-800">
+                  <div class="text-zinc-400 text-xs mb-1">Projets actifs</div>
+                  <div class="font-impact text-3xl text-white">04</div>
+                  <div class="text-[10px] text-emerald-400 mt-1">2 livraisons ce mois</div>
+                </div>
+                <div class="p-4 rounded-xl bg-zinc-900/90 border border-zinc-800">
+                  <div class="text-zinc-400 text-xs mb-1">Tâches sprint en cours</div>
+                  <div class="font-impact text-3xl text-[#EA7200]">45 / 58</div>
+                  <div class="text-[10px] text-zinc-400 mt-1">77% de complétion</div>
+                </div>
+                <div class="p-4 rounded-xl bg-zinc-900/90 border border-zinc-800">
+                  <div class="text-zinc-400 text-xs mb-1">Budget engagé (FCFA)</div>
+                  <div class="font-impact text-2xl text-white">1 400 000</div>
+                  <div class="text-[10px] text-zinc-400 mt-1">Facturation jalons</div>
+                </div>
+                <div class="p-4 rounded-xl bg-zinc-900/90 border border-zinc-800">
+                  <div class="text-zinc-400 text-xs mb-1">Satisfaction & QA</div>
+                  <div class="font-impact text-3xl text-emerald-400">99.4%</div>
+                  <div class="text-[10px] text-zinc-400 mt-1">Zéro bug bloquant</div>
+                </div>
+              </div>
+
+              <!-- Projects list -->
+              <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 space-y-3">
+                <div class="flex items-center justify-between pb-2 border-b border-zinc-800 text-xs font-bold text-white">
+                  <span>Projets suivis en temps réel</span>
+                  <span class="font-mono text-zinc-400 text-[10px]">Mis à jour il y a 8 min</span>
+                </div>
+                <div class="p-3 rounded-lg bg-zinc-950/80 border border-zinc-800 flex items-center justify-between text-xs">
+                  <div>
+                    <span class="font-mono text-[#EA7200] font-bold">DEV-2026-01</span>
+                    <span class="font-semibold text-white ml-2">Plateforme E-Commerce Sawa Market</span>
+                    <div class="text-[11px] text-zinc-400">Pôle Web & Mobile · Lead : Marcelle N. · Échéance : 15 Nov. 2026</div>
+                  </div>
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-[#EA7200]/15 text-[#EA7200] border border-[#EA7200]/30">En cours (78%)</span>
+                </div>
+                <div class="p-3 rounded-lg bg-zinc-950/80 border border-zinc-800 flex items-center justify-between text-xs">
+                  <div>
+                    <span class="font-mono text-[#EA7200] font-bold">DEV-2026-02</span>
+                    <span class="font-semibold text-white ml-2">Rebranding & Charte Kemet Labs</span>
+                    <div class="text-[11px] text-zinc-400">Pôle Branding & Design · Lead : Yannick T. · Échéance : 05 Nov. 2026</div>
+                  </div>
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">Terminé (100%)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 2: Kanban -->
+            <div data-platform-screen="kanban" class="hidden grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
+                <div class="text-xs font-bold text-zinc-300 pb-2 border-b border-zinc-800 mb-3">À FAIRE (SPRINT)</div>
+                <div class="p-3 rounded-lg bg-zinc-950 border border-zinc-800 text-xs space-y-1">
+                  <span class="font-mono text-[10px] text-[#EA7200]">API / Backend</span>
+                  <div class="font-semibold text-white">Intégration passerelle Mobile Money</div>
+                  <div class="text-[10px] text-zinc-500">Armel B. · Priorité Haute</div>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-zinc-900/60 border border-[#EA7200]/30">
+                <div class="text-xs font-bold text-[#EA7200] pb-2 border-b border-zinc-800 mb-3">EN COURS DE DEV</div>
+                <div class="p-3 rounded-lg bg-zinc-950 border border-zinc-800 text-xs space-y-1">
+                  <span class="font-mono text-[10px] text-[#EA7200]">Frontend</span>
+                  <div class="font-semibold text-white">Tunnel checkout responsive</div>
+                  <div class="text-[10px] text-emerald-400">Christian E. · 90% validé</div>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
+                <div class="text-xs font-bold text-emerald-400 pb-2 border-b border-zinc-800 mb-3">VALIDÉ PAR CLIENT</div>
+                <div class="p-3 rounded-lg bg-zinc-950 border border-zinc-800 text-xs space-y-1">
+                  <span class="font-mono text-[10px] text-emerald-400">Design</span>
+                  <div class="font-semibold text-white">Palette typographique & logos</div>
+                  <div class="text-[10px] text-zinc-400">Approuvé par le client</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 3: Calendar -->
+            <div data-platform-screen="calendar" class="hidden space-y-4">
+              <div class="flex items-center justify-between pb-2 border-b border-zinc-800 text-xs font-bold text-white">
+                <span>Échéances & Réunions de sprint</span>
+                <span class="font-mono text-[#EA7200]">Juillet — Novembre 2026</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="p-4 rounded-xl bg-zinc-900/90 border border-zinc-800 text-xs space-y-1">
+                  <span class="text-[#EA7200] font-mono text-[10px]">12 Juillet 2026 · 14h30</span>
+                  <h5 class="font-bold text-white text-sm">Kickoff Projet & Cadrage</h5>
+                  <p class="text-zinc-400 text-[11px]">Validation du cahier des charges et lancement des maquettes UX.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-zinc-900/90 border border-zinc-800 text-xs space-y-1">
+                  <span class="text-emerald-400 font-mono text-[10px]">15 Novembre 2026 · 10h00</span>
+                  <h5 class="font-bold text-white text-sm">Mise en ligne E-Commerce</h5>
+                  <p class="text-zinc-400 text-[11px]">Déploiement production, tests de charge et bascule DNS.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-zinc-900/90 border border-zinc-800 text-xs space-y-1">
+                  <span class="text-amber-400 font-mono text-[10px]">22 Novembre 2026 · 16h00</span>
+                  <h5 class="font-bold text-white text-sm">Bilan Campagne Ads & ROI</h5>
+                  <p class="text-zinc-400 text-[11px]">Analyse des KPI de conversion et rentabilité Meta / Google.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 4: Messages -->
+            <div data-platform-screen="messages" class="hidden grid grid-cols-1 md:grid-cols-12 gap-4">
+              <div class="md:col-span-4 p-3 rounded-xl bg-zinc-900/60 border border-zinc-800 text-xs space-y-2">
+                <div class="p-2.5 rounded-lg bg-[#EA7200]/10 border border-[#EA7200]/30 font-bold text-white">
+                  <div>Équipe Deviora Projets</div>
+                  <div class="text-[10px] text-zinc-400 font-normal">Livraison du build v1.2 prête...</div>
+                </div>
+                <div class="p-2.5 rounded-lg bg-zinc-950 border border-zinc-800 text-zinc-400">
+                  <div>Devis & Appels d'offres</div>
+                  <div class="text-[10px] text-zinc-500 font-normal">Proposition commerciale validée...</div>
+                </div>
+              </div>
+              <div class="md:col-span-8 p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 flex flex-col justify-between min-h-[220px]">
+                <div class="space-y-3 text-xs">
+                  <div class="p-3 rounded-xl bg-zinc-950 border border-zinc-800 max-w-md text-zinc-300">
+                    <span class="font-bold text-white block mb-0.5">Marcelle N. (Product Owner)</span>
+                    Bonjour ! Le prototype mobile interactif est prêt pour votre validation en ligne.
+                  </div>
+                  <div class="p-3 rounded-xl bg-[#EA7200] text-black font-medium max-w-md ml-auto">
+                    Merci Marcelle, le tunnel Mobile Money fonctionne parfaitement ! Validé.
+                  </div>
+                </div>
+                <div class="pt-3 border-t border-zinc-800 flex gap-2">
+                  <input type="text" disabled placeholder="Répondre à l'équipe Deviora..." class="flex-1 bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-2 text-xs text-zinc-300 placeholder-zinc-500" />
+                  <a href="#contact" class="px-4 py-2 rounded-lg bg-[#EA7200] text-black font-bold text-xs flex items-center gap-1">Échanger</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Frame: Mobile -->
+        <div id="frame-mobile" class="hidden max-w-xs mx-auto rounded-[36px] border-4 border-zinc-700 bg-[#0E0E12] overflow-hidden p-3 transition-all">
+          <div class="w-20 h-3.5 bg-zinc-800 rounded-full mx-auto mb-3"></div>
+          <div class="flex items-center justify-between pb-3 border-b border-zinc-800 mb-3 px-1">
+            <span class="font-serif font-black text-xs text-[#EA7200]">Deviora Projets</span>
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          </div>
+          <div class="space-y-3 text-xs">
+            <div class="p-3 rounded-xl bg-zinc-900 border border-zinc-800">
+              <div class="text-[10px] text-zinc-400">Projets actifs</div>
+              <div class="font-impact text-2xl text-white">04 PROJETS</div>
+              <div class="text-[10px] text-[#EA7200]">Prochain jalon dans 2 jours</div>
+            </div>
+            <div class="p-3 rounded-xl bg-zinc-900/90 border border-zinc-800 space-y-1">
+              <div class="flex justify-between text-[11px] font-bold text-white">
+                <span>Sawa Market</span>
+                <span class="text-[#EA7200] font-mono">78%</span>
+              </div>
+              <div class="w-full h-1.5 rounded-full bg-zinc-800 overflow-hidden">
+                <div class="h-full bg-[#EA7200] w-[78%]"></div>
+              </div>
+              <div class="text-[9px] text-zinc-400">Échéance : 15 Nov 2026</div>
+            </div>
+            <a href="#contact" class="w-full py-2.5 rounded-full bg-[#EA7200] text-black font-extrabold text-[11px] flex items-center justify-center gap-1">
+              <span>Lancer un projet</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </a>
+          </div>
+          <div class="w-20 h-1 bg-zinc-600 rounded-full mx-auto mt-3"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. SECTION NOS RÉALISATIONS (PORTFOLIO) -->
+    <section id="realisations" class="py-24 relative overflow-hidden bg-zinc-50/70 dark:bg-[#08080A] transition-colors duration-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div class="space-y-3 max-w-2xl">
+            <div class="flex items-center gap-3">
+              <span class="font-mono text-xs tracking-widest uppercase font-semibold text-[#EA7200]">PORTFOLIO & ÉTUDES DE CAS</span>
+              <div class="h-[1px] w-16 bg-[#EA7200]/40"></div>
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-white">
+              Nos <span style="color: #EA7200;">Réalisations</span> d'Impact
+            </h2>
+            <p class="text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+              Des projets conçus avec minutie technique et ambition créative. Découvrez notre réalisation phare <strong class="text-[#EA7200]">Deviora Projets</strong> ainsi que nos études de cas.
+            </p>
+          </div>
+
+          <!-- Portfolio Filter Buttons -->
+          <div class="flex items-center gap-1.5 p-1.5 rounded-xl bg-zinc-200/80 dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-800 shrink-0 self-start md:self-auto overflow-x-auto max-w-full">
+            <button type="button" data-portfolio-filter="all" class="px-3.5 py-1.5 text-xs font-bold rounded-lg transition-all bg-white dark:bg-[#18181C] text-zinc-900 dark:text-white border border-zinc-300 dark:border-zinc-700">Tous les projets</button>
+            <button type="button" data-portfolio-filter="01" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg transition-all text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">Web & Mobile</button>
+            <button type="button" data-portfolio-filter="02" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg transition-all text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">Branding</button>
+            <button type="button" data-portfolio-filter="03" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg transition-all text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white">Marketing</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Flagship: Deviora Projets -->
+          <div data-portfolio-item data-pole="01" data-cat="Plateforme Web Collaborative" data-title="Deviora Projets" data-desc="Application web collaborative complète de gestion de projets, développée pour centraliser le suivi, le calendrier, les livrables et la communication entre nos clients et nos équipes." data-client="Deviora Inc." data-img="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" class="md:col-span-2 lg:col-span-2 rounded-2xl overflow-hidden bg-white dark:bg-[#121214] border border-[#EA7200] flex flex-col cursor-pointer group hover:-translate-y-1 transition-transform">
+            <div class="relative aspect-[16/10] overflow-hidden bg-zinc-900">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Deviora Projets" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <div class="absolute top-4 left-4 font-mono text-[10px] font-bold tracking-wider uppercase bg-[#EA7200] text-black px-3 py-1 rounded">RÉALISATION PHARE DEVIORA</div>
+              <div class="absolute top-4 right-4 font-mono text-[10px] uppercase font-bold text-white bg-black/60 px-2.5 py-1 rounded border border-white/10">PÔLE 01</div>
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-zinc-300">
+                <span class="font-medium">Outil Interne & Clients</span>
+                <span class="font-mono text-zinc-400">2026</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="text-xs font-semibold text-[#EA7200] uppercase tracking-wider mb-1">Plateforme Web Collaborative</div>
+                <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-2 group-hover:text-[#EA7200] transition-colors">Deviora Projets</h3>
+                <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+                  Outil tout-en-un de pilotage agile : gestion de sprints, jalons, calendrier, appels d'offres et messagerie instantanée sécurisée.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between">
+                <span class="text-xs text-zinc-500">React · TypeScript · Tailwind · Node API</span>
+                <span class="text-xs font-bold text-[#EA7200] flex items-center gap-1">Voir les détails →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 2: Kemet Labs -->
+          <div data-portfolio-item data-pole="02" data-cat="Identité Visuelle & Packaging 3D" data-title="Kemet Labs Cosmetics" data-desc="Création de l'univers de marque premium, charte graphique complète, modélisation 3D des flacons et packaging éco-responsable." data-client="Kemet Labs Group" data-img="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80" class="rounded-2xl overflow-hidden bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col cursor-pointer group hover:-translate-y-1 transition-transform">
+            <div class="relative aspect-[16/10] overflow-hidden bg-zinc-900">
+              <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80" alt="Kemet Labs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <div class="absolute top-4 left-4 font-mono text-[10px] font-bold uppercase bg-black/70 text-zinc-300 px-2 py-0.5 rounded border border-zinc-700">[À REMPLACER]</div>
+              <div class="absolute top-4 right-4 font-mono text-[10px] uppercase font-bold text-white bg-black/60 px-2.5 py-1 rounded border border-white/10">PÔLE 02</div>
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-zinc-300">
+                <span class="font-medium">Kemet Labs</span>
+                <span class="font-mono text-zinc-400">2026</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="text-xs font-semibold text-[#EA7200] uppercase tracking-wider mb-1">Branding & Packaging</div>
+                <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-2 group-hover:text-[#EA7200] transition-colors">Kemet Labs Cosmetics</h3>
+                <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+                  Identité de marque complète, typographie sur-mesure et déclinaisons packaging 3D prêtes à l'impression.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between">
+                <span class="text-xs text-zinc-500">Logo · 3D Packaging · Charte</span>
+                <span class="text-xs font-bold text-[#EA7200]">Détails →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 3: AfroPay -->
+          <div data-portfolio-item data-pole="01" data-cat="Application Fintech Mobile" data-title="AfroPay Gateway" data-desc="Conception et développement de l'application mobile et de l'API de paiement Mobile Money multi-opérateurs." data-client="Fintech Solutions" data-img="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80" class="rounded-2xl overflow-hidden bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col cursor-pointer group hover:-translate-y-1 transition-transform">
+            <div class="relative aspect-[16/10] overflow-hidden bg-zinc-900">
+              <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80" alt="AfroPay" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <div class="absolute top-4 left-4 font-mono text-[10px] font-bold uppercase bg-black/70 text-zinc-300 px-2 py-0.5 rounded border border-zinc-700">[À REMPLACER]</div>
+              <div class="absolute top-4 right-4 font-mono text-[10px] uppercase font-bold text-white bg-black/60 px-2.5 py-1 rounded border border-white/10">PÔLE 01</div>
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-zinc-300">
+                <span class="font-medium">Fintech SARL</span>
+                <span class="font-mono text-zinc-400">2026</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="text-xs font-semibold text-[#EA7200] uppercase tracking-wider mb-1">Mobile & API Fintech</div>
+                <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-2 group-hover:text-[#EA7200] transition-colors">AfroPay Gateway</h3>
+                <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+                  Passerelle de paiement intuitive connectée à MTN Mobile Money et Orange Money avec sécurité biométrique.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between">
+                <span class="text-xs text-zinc-500">React Native · REST API</span>
+                <span class="text-xs font-bold text-[#EA7200]">Détails →</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 4: Savana Organic -->
+          <div data-portfolio-item data-pole="03" data-cat="Campagne Acquisition Ads & Social" data-title="Savana Organic Launch" data-desc="Stratégie publicitaire Meta Ads et Google Ads pour le lancement de la gamme bio avec un ROI mesuré à +380%." data-client="Savana Distribution" data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" class="rounded-2xl overflow-hidden bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col cursor-pointer group hover:-translate-y-1 transition-transform">
+            <div class="relative aspect-[16/10] overflow-hidden bg-zinc-900">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Savana Organic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <div class="absolute top-4 left-4 font-mono text-[10px] font-bold uppercase bg-black/70 text-zinc-300 px-2 py-0.5 rounded border border-zinc-700">[À REMPLACER]</div>
+              <div class="absolute top-4 right-4 font-mono text-[10px] uppercase font-bold text-white bg-black/60 px-2.5 py-1 rounded border border-white/10">PÔLE 03</div>
+              <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-zinc-300">
+                <span class="font-medium">Savana Bio</span>
+                <span class="font-mono text-zinc-400">2026</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="text-xs font-semibold text-[#EA7200] uppercase tracking-wider mb-1">Marketing Digital</div>
+                <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-2 group-hover:text-[#EA7200] transition-colors">Savana Organic Launch</h3>
+                <p class="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+                  Génération de leads et ventes directes via tunnels publicitaires optimisés et gestion de contenu viral.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between">
+                <span class="text-xs text-zinc-500">Meta Ads · Google Ads · KPI</span>
+                <span class="text-xs font-bold text-[#EA7200]">Détails →</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Project Modal -->
+      <div id="project-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+        <div class="bg-white dark:bg-[#121214] border border-zinc-300 dark:border-zinc-800 rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto relative">
+          <button type="button" id="close-project-modal" class="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/60 text-white hover:bg-black/90">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+          <div class="aspect-video w-full bg-zinc-950 overflow-hidden relative">
+            <img id="modal-img" src="" alt="Project" class="w-full h-full object-cover" />
+            <div class="absolute bottom-4 left-6 right-6 text-white">
+              <span id="modal-cat" class="font-mono text-xs uppercase text-[#EA7200] block mb-1">Catégorie</span>
+              <h3 id="modal-title" class="text-2xl font-bold">Titre du Projet</h3>
+            </div>
+          </div>
+          <div class="p-6 space-y-4">
+            <p id="modal-desc" class="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">Description</p>
+            <div class="p-4 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs flex justify-between">
+              <div>
+                <span class="text-zinc-500 block">Commanditaire</span>
+                <span id="modal-client" class="font-bold text-zinc-900 dark:text-white">Client</span>
+              </div>
+              <div>
+                <span class="text-zinc-500 block">Année</span>
+                <span class="font-bold text-zinc-900 dark:text-white font-mono">2026</span>
+              </div>
+            </div>
+            <div class="pt-2 flex justify-end">
+              <a href="#contact" class="px-6 py-2.5 rounded-full text-xs font-bold bg-[#EA7200] text-black hover:bg-[#D46400]">
+                Lancer un projet similaire
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. SECTION L'ÉQUIPE (5 RÔLES OFFICIELS) -->
+    <section id="equipe" class="py-24 relative overflow-hidden bg-zinc-50/70 dark:bg-[#0B0B0E]/60 border-t border-zinc-200 dark:border-zinc-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="max-w-3xl space-y-3 mb-16">
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-xs tracking-widest uppercase font-semibold text-[#EA7200]">COLLABORATEURS & TALENTS</span>
+            <div class="h-[1px] w-16 bg-[#EA7200]/40"></div>
+          </div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-white">
+            L'<span style="color: #EA7200;">Équipe</span> Derrière Vos Succès
+          </h2>
+          <p class="text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+            Une organisation agile articulée autour de 5 piliers de compétences indispensables : pilotage produit, expérience utilisateur, ingénierie frontend, architecture backend et rigueur QA.
+          </p>
+          <div class="inline-block p-2 rounded-lg bg-zinc-200/70 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 text-xs font-mono">
+            [Note : Cartes avec rôles officiels Deviora — Noms provisoires marqués « à remplacer »]
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Membre 1: PO -->
+          <div class="p-7 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-[#EA7200] to-amber-500 text-black font-impact text-2xl flex items-center justify-center font-bold">MN</div>
+                <span class="font-mono text-[10px] text-zinc-500 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 rounded border border-zinc-200 dark:border-zinc-800">[À REMPLACER]</span>
+              </div>
+              <span class="font-mono text-[11px] font-bold text-[#EA7200] uppercase tracking-wider block mb-1">COORDINATION & PILOTAGE</span>
+              <h3 class="text-lg font-bold text-zinc-900 dark:text-white mb-1">Marcelle N.</h3>
+              <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 italic mb-4">Product Owner / Coordination</p>
+              <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">Garantit le cadrage précis de vos besoins, la tenue des délais et la synchronisation agile des sprints.</p>
+            </div>
+            <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800 text-[11px] text-zinc-500">Scrum · Cadrage fonctionnel · Roadmaps</div>
+          </div>
+
+          <!-- Membre 2: UX/UI -->
+          <div class="p-7 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500 to-indigo-600 text-white font-impact text-2xl flex items-center justify-center">YT</div>
+                <span class="font-mono text-[10px] text-zinc-500 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 rounded border border-zinc-200 dark:border-zinc-800">[À REMPLACER]</span>
+              </div>
+              <span class="font-mono text-[11px] font-bold text-[#EA7200] uppercase tracking-wider block mb-1">EXPÉRIENCE & DESIGN</span>
+              <h3 class="text-lg font-bold text-zinc-900 dark:text-white mb-1">Yannick T.</h3>
+              <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 italic mb-4">Lead UX/UI Designer</p>
+              <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">Crée des chartes visuelles distinctives et des interfaces intuitives adaptées aux comportements réels.</p>
+            </div>
+            <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800 text-[11px] text-zinc-500">Figma · Wireframing · Design System</div>
+          </div>
+
+          <!-- Membre 3: Frontend -->
+          <div class="p-7 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-blue-500 to-cyan-500 text-white font-impact text-2xl flex items-center justify-center">CE</div>
+                <span class="font-mono text-[10px] text-zinc-500 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 rounded border border-zinc-200 dark:border-zinc-800">[À REMPLACER]</span>
+              </div>
+              <span class="font-mono text-[11px] font-bold text-[#EA7200] uppercase tracking-wider block mb-1">INGÉNIERIE CLIENT</span>
+              <h3 class="text-lg font-bold text-zinc-900 dark:text-white mb-1">Christian E.</h3>
+              <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 italic mb-4">Frontend Engineer</p>
+              <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">Développe des interfaces web et mobiles fluides, réactives et optimisées pour le référencement.</p>
+            </div>
+            <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800 text-[11px] text-zinc-500">React · Next.js · Tailwind · Mobile</div>
+          </div>
+
+          <!-- Membre 4: Backend -->
+          <div class="p-7 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-500 to-teal-600 text-white font-impact text-2xl flex items-center justify-center">AB</div>
+                <span class="font-mono text-[10px] text-zinc-500 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 rounded border border-zinc-200 dark:border-zinc-800">[À REMPLACER]</span>
+              </div>
+              <span class="font-mono text-[11px] font-bold text-[#EA7200] uppercase tracking-wider block mb-1">INFRASTRUCTURE & API</span>
+              <h3 class="text-lg font-bold text-zinc-900 dark:text-white mb-1">Armel B.</h3>
+              <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 italic mb-4">Backend Architect</p>
+              <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">Conçoit des bases de données fiables, des API performantes et des architectures cloud scalables.</p>
+            </div>
+            <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800 text-[11px] text-zinc-500">Node · API REST · PostgreSQL · Docker</div>
+          </div>
+
+          <!-- Membre 5: QA -->
+          <div class="p-7 rounded-2xl bg-white dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-rose-500 to-pink-600 text-white font-impact text-2xl flex items-center justify-center">SF</div>
+                <span class="font-mono text-[10px] text-zinc-500 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 rounded border border-zinc-200 dark:border-zinc-800">[À REMPLACER]</span>
+              </div>
+              <span class="font-mono text-[11px] font-bold text-[#EA7200] uppercase tracking-wider block mb-1">QUALITÉ & RECETTE</span>
+              <h3 class="text-lg font-bold text-zinc-900 dark:text-white mb-1">Sandra F.</h3>
+              <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 italic mb-4">QA / Test Engineer</p>
+              <p class="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed mb-6">Traque les régressions, valide la compatibilité multi-appareils et garantit zéro défaut en production.</p>
+            </div>
+            <div class="pt-4 border-t border-zinc-100 dark:border-zinc-800 text-[11px] text-zinc-500">Tests E2E · Sécurité · Recette client</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. SECTION CONTACT & DEVIS EXPRESS -->
+    <section id="contact" class="py-24 relative overflow-hidden bg-white dark:bg-[#08080A] transition-colors duration-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="max-w-3xl space-y-3 mb-16">
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-xs tracking-widest uppercase font-semibold text-[#EA7200]">CONTACT & ESTIMATION DE PROJET</span>
+            <div class="h-[1px] w-16 bg-[#EA7200]/40"></div>
+          </div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-white">
+            Donnez Vie à Vos Idées avec <span style="color: #EA7200;">Deviora</span>
+          </h2>
+          <p class="text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+            Un projet digital en vue ? Contactez-nous par appel, WhatsApp ou via notre formulaire de devis. Nos équipes vous répondent sous 24 heures ouvrées.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Left Column: Coordonnées officielles -->
+          <div class="lg:col-span-5 space-y-8">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a href="https://wa.me/237651026545?text=Bonjour%20Deviora,%20je%20souhaite%20un%20devis." target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3"/></svg>
+                <span>WhatsApp Direct</span>
+              </a>
+
+              <a href="tel:+237651026545" class="p-4 rounded-2xl bg-[#EA7200] hover:bg-[#D46400] text-black font-extrabold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all">
+                <svg class="w-5 h-5 fill-black stroke-black" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>Appel Téléphonique</span>
+              </a>
+            </div>
+
+            <!-- Detailed Coordonnées -->
+            <div class="p-7 rounded-2xl bg-zinc-50 dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 space-y-5">
+              <h3 class="font-mono text-xs font-bold uppercase tracking-wider text-zinc-900 dark:text-white pb-3 border-b border-zinc-200 dark:border-zinc-800">COORDONNÉES OFFICIELLES</h3>
+              <div class="space-y-4 text-xs sm:text-sm">
+                <div>
+                  <span class="text-zinc-500 dark:text-zinc-400 block text-[11px]">Lignes directes (Cameroun)</span>
+                  <a href="tel:+237651026545" class="font-bold text-zinc-900 dark:text-white hover:text-[#EA7200] block">(+237) 651-026-545</a>
+                  <a href="tel:+237688373844" class="font-bold text-zinc-900 dark:text-white hover:text-[#EA7200] block">(+237) 688-373-844</a>
+                </div>
+                <div>
+                  <span class="text-zinc-500 dark:text-zinc-400 block text-[11px]">Site web & Réseaux sociaux</span>
+                  <span class="font-bold text-zinc-900 dark:text-white block font-mono">www.deviora.com</span>
+                  <span class="font-mono text-[#EA7200] block font-semibold">@deviora25</span>
+                </div>
+                <div>
+                  <span class="text-zinc-500 dark:text-zinc-400 block text-[11px]">Email professionnel</span>
+                  <a href="mailto:contact@deviora.com" class="font-bold text-zinc-900 dark:text-white hover:text-[#EA7200]">contact@deviora.com</a>
+                </div>
+                <div>
+                  <span class="text-zinc-500 dark:text-zinc-400 block text-[11px]">Siège & Bureaux</span>
+                  <span class="font-medium text-zinc-800 dark:text-zinc-200 block">Akwa, Boulevard de la Liberté</span>
+                  <span class="text-zinc-500 dark:text-zinc-400">Douala, Cameroun</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-[#EA7200]/10 border border-[#EA7200]/25 text-zinc-800 dark:text-zinc-200 text-xs space-y-1">
+              <span class="font-bold text-[#EA7200] uppercase tracking-wide block font-mono">ENGAGEMENT DEVIORA :</span>
+              <p>Toutes nos offres incluent un cadrage rigoureux, une estimation transparente en FCFA et le pilotage direct de votre projet.</p>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Formulaire de Devis Express -->
+          <div class="lg:col-span-7">
+            <div class="p-8 sm:p-10 rounded-3xl bg-zinc-50 dark:bg-[#121214] border border-zinc-200 dark:border-zinc-800 relative">
+              <h3 class="text-xl font-bold text-zinc-900 dark:text-white mb-1">Demander une estimation ou un devis express</h3>
+              <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-6">Remplissez les informations ci-dessous. Nous analysons votre besoin sans engagement sous 24h.</p>
+
+              <div id="form-error" class="hidden p-3.5 rounded-xl bg-red-500/10 border border-red-500/30 text-red-600 dark:text-red-400 text-xs mb-4"></div>
+
+              <div id="form-success" class="hidden p-8 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-center space-y-4">
+                <div class="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mx-auto">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <h4 class="text-xl font-bold text-zinc-900 dark:text-white">Demande transmise avec succès !</h4>
+                <p class="text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 max-w-md mx-auto">
+                  Merci ! Notre équipe étudie votre demande et vous contactera sous 24 heures ouvrées.
+                </p>
+              </div>
+
+              <form id="contact-form" class="space-y-4">
+                <input type="hidden" id="form-service" value="" />
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-zinc-700 dark:text-zinc-300 mb-1.5">Nom complet *</label>
+                    <input type="text" id="form-name" required placeholder="Ex : Jean-Paul Mbianda" class="w-full px-4 py-2.5 text-xs sm:text-sm rounded-xl bg-white dark:bg-[#18181C] border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:border-[#EA7200]" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-zinc-700 dark:text-zinc-300 mb-1.5">Adresse Email *</label>
+                    <input type="email" id="form-email" required placeholder="contact@entreprise.cm" class="w-full px-4 py-2.5 text-xs sm:text-sm rounded-xl bg-white dark:bg-[#18181C] border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:border-[#EA7200]" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-zinc-700 dark:text-zinc-300 mb-1.5">Téléphone / WhatsApp</label>
+                    <input type="tel" id="form-phone" placeholder="+237 6XX XX XX XX" class="w-full px-4 py-2.5 text-xs sm:text-sm rounded-xl bg-white dark:bg-[#18181C] border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:border-[#EA7200]" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-zinc-700 dark:text-zinc-300 mb-1.5">Pôle d'intérêt</label>
+                    <select id="form-pole" class="w-full px-4 py-2.5 text-xs sm:text-sm rounded-xl bg-white dark:bg-[#18181C] border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:border-[#EA7200]">
+                      <option value="01">Pôle 01 : Développement Web & Mobile</option>
+                      <option value="02">Pôle 02 : Branding & Design</option>
+                      <option value="03">Pôle 03 : Marketing Digital</option>
+                      <option value="all">Accompagnement 360° complet</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-zinc-700 dark:text-zinc-300 mb-1.5">Budget indicatif envisagé (FCFA)</label>
+                  <select id="form-budget" class="w-full px-4 py-2.5 text-xs sm:text-sm rounded-xl bg-white dark:bg-[#18181C] border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:border-[#EA7200]">
+                    <option value="80000-150000">80 000 – 150 000 FCFA (Site Vitrine / UI Design)</option>
+                    <option value="150000-400000" selected>150 000 – 400 000 FCFA (E-Commerce / API / Branding)</option>
+                    <option value="400000-1000000">400 000 – 1 000 000 FCFA (App Mobile / Projets avancés)</option>
+                    <option value="1000000+">Plus de 1 000 000 FCFA (Plateforme sur mesure)</option>
+                    <option value="monthly">20 000 – 80 000 FCFA / mois (Maintenance & Support)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-zinc-700 dark:text-zinc-300 mb-1.5">Description de votre projet *</label>
+                  <textarea id="form-message" rows="4" required placeholder="Expliquez vos objectifs, votre cible, vos contraintes de délais..." class="w-full px-4 py-2.5 text-xs sm:text-sm rounded-xl bg-white dark:bg-[#18181C] border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:border-[#EA7200]"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 px-6 rounded-full bg-[#EA7200] hover:bg-[#D46400] text-black font-extrabold text-sm transition-all flex items-center justify-center gap-2 active:scale-95">
+                  <span>Envoyer la demande de devis</span>
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9. BANDEAU FINAL CTA -->
+    <section class="relative overflow-hidden py-20 bg-zinc-950 text-white border-t border-zinc-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="p-10 sm:p-14 rounded-3xl bg-gradient-to-r from-zinc-900 via-[#141418] to-zinc-900 border border-zinc-800 relative overflow-hidden">
+          <div class="absolute top-0 left-12 right-12 h-[1px] bg-gradient-to-r from-transparent via-[#EA7200] to-transparent"></div>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-4 text-left">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#EA7200]"></span>
+                <span class="font-mono text-xs font-semibold uppercase tracking-widest text-[#EA7200]">PILOTAGE CENTRALISÉ & TRANSPARENCE</span>
+              </div>
+              <h2 class="font-impact text-4xl sm:text-5xl md:text-6xl uppercase tracking-tight text-white leading-none">
+                PRÊT À LANCER <span style="color: #EA7200;">VOTRE PROJET ?</span>
+              </h2>
+              <p class="text-sm sm:text-base text-zinc-300 max-w-xl leading-relaxed">
+                Rejoignez les entreprises qui font confiance à l'expertise Deviora. Contactez-nous dès aujourd'hui pour donner vie à vos projets digitaux.
+              </p>
+              <div class="pt-2 flex flex-wrap items-center gap-6 text-xs text-zinc-400">
+                <span class="font-bold text-zinc-200">(+237) 651-026-545</span>
+                <span class="font-mono text-[#EA7200]">@deviora25</span>
+                <span class="font-mono text-zinc-500">Douala, Cameroun</span>
+              </div>
+            </div>
+            <div class="lg:col-span-5 flex justify-center lg:justify-end">
+              <a href="#contact" class="w-full sm:w-auto py-4 px-8 rounded-full bg-[#EA7200] text-black hover:bg-[#D46400] font-extrabold text-sm sm:text-base transition-all flex items-center justify-center gap-2">
+                <span>Démarrer un projet avec Deviora</span>
+                <svg class="w-5 h-5 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FOOTER OFFICIEL -->
+    <footer class="bg-[#08080A] text-white border-t-2 border-t-[#EA7200] pt-16 pb-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-14 border-b border-zinc-800">
+          
+          <div class="lg:col-span-4 space-y-4">
+            <a href="#" class="inline-flex flex-col select-none">
+              <div class="font-serif font-black tracking-tight flex items-baseline leading-none text-3xl">
+                <span class="text-[#EA7200]">De</span>
+                <span class="inline-flex items-center justify-center mx-[1px] translate-y-[-1px] text-[#EA7200]">
+                  <svg class="w-5 h-5 inline-block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.8"><path d="M6 8l6 8 6-8"/></svg>
+                </span>
+                <span class="text-white font-extrabold">iora</span>
+              </div>
+              <span class="font-sans italic text-zinc-400 font-medium text-xs mt-1">La précision au cœur de l'innovation</span>
+            </a>
+            <p class="text-xs sm:text-sm text-zinc-400 max-w-sm leading-relaxed">
+              Une agence digitale jeune et ambitieuse, spécialisée dans trois domaines d'excellence pour propulser votre entreprise vers le succès.
+            </p>
+            <span class="font-mono text-xs text-[#EA7200] font-bold block pt-1">BUILD. BRAND. GROW.</span>
+          </div>
+
+          <div class="lg:col-span-3 space-y-3">
+            <h4 class="font-mono text-xs font-bold uppercase tracking-wider text-[#EA7200]">NOS 3 PÔLES D'EXPERTISE</h4>
+            <ul class="space-y-2 text-xs text-zinc-400">
+              <li><a href="#services" class="hover:text-white transition-colors">Pôle 01 : Développement Web & Mobile</a></li>
+              <li><a href="#services" class="hover:text-white transition-colors">Pôle 02 : Branding & Design</a></li>
+              <li><a href="#services" class="hover:text-white transition-colors">Pôle 03 : Marketing Digital</a></li>
+              <li><a href="#services" class="hover:text-white transition-colors">Catalogue officiel & Tarifs FCFA</a></li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-2 space-y-3">
+            <h4 class="font-mono text-xs font-bold uppercase tracking-wider text-[#EA7200]">NAVIGATION</h4>
+            <ul class="space-y-2 text-xs text-zinc-400">
+              <li><a href="#a-propos" class="hover:text-white transition-colors">À propos</a></li>
+              <li><a href="#plateforme" class="hover:text-white transition-colors">Deviora Projets</a></li>
+              <li><a href="#realisations" class="hover:text-white transition-colors">Réalisations</a></li>
+              <li><a href="#equipe" class="hover:text-white transition-colors">L'Équipe</a></li>
+              <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-3 space-y-3">
+            <h4 class="font-mono text-xs font-bold uppercase tracking-wider text-[#EA7200]">CONTACT & SIÈGE</h4>
+            <div class="space-y-1.5 text-xs text-zinc-400">
+              <p class="text-zinc-200 font-medium">Akwa, Boulevard de la Liberté</p>
+              <p>Douala, Cameroun</p>
+              <p class="pt-2 text-zinc-200 font-bold">(+237) 651-026-545</p>
+              <p class="text-zinc-200 font-bold">(+237) 688-373-844</p>
+              <p class="font-mono text-[#EA7200] pt-1">@deviora25 · www.deviora.com</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500">
+          <div>© 2026 Deviora Digital Agency. Tous droits réservés.</div>
+          <div class="flex items-center gap-6">
+            <span>Cameroun · Afrique · International</span>
+            <a href="#" class="p-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-white hover:border-[#EA7200] transition-colors" title="Retour en haut" aria-label="Haut de page">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Vanilla JavaScript entry point (No React, No TypeScript runtime) -->
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
